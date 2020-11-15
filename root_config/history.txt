@@ -1,0 +1,79 @@
+ls
+hellp
+hellp
+ls
+cat ./.bash_history 
+cat ./.bash_history 
+cat ./.bash_history 
+ls
+cat ./.bash_history 
+cat ./.bashrc 
+ls
+setterm -inversescreen on
+ls
+setterm -inversescreen off
+ls
+nihao
+ls
+ls -AFhlt
+ls
+ls
+ls
+ls -alh
+dnf install redis
+systemctl enable php74-php-fpm
+systemctl enable redis
+netstat -ano|grep 3690
+netstat -ano|grep 3306
+ps aux|grep php
+ps aux|grep reids
+ps aux|grep redis
+netstat -ano|grep 6379
+netstat -ano|grep 80
+netstat -ano|grep 6379
+ps aux|grep reids
+ps aux|grep redis
+date
+timedatectl
+timedatectl set-timezone Asia/Shanghai
+timedatectl
+date
+date
+cat /etc/locale.conf 
+cat /etc/sysconfig/nginx
+date
+ls /etc/timezone 
+cat /etc/timezone 
+cat /etc/localtime 
+yum list installed
+dnf list installed
+dnf list installed|grep mysql
+dnf remove mysql mysql-server mysql-libs
+whereis mysql
+ls
+
+dnf install @mysql
+systemctl start mysqld
+mysql -uroot 
+mysql -uroot -p
+mysql -uroot
+mysql -uroot
+vim /etc/my.cnf
+cd /etc/my.cnf.d
+ls
+vim mysql-server.cnf 
+vim mysql-server.cnf 
+cd /var/run
+ls
+ls -alh
+ls
+cd mysqld/
+ls
+ls -alh
+pwd
+cd /var/lock
+ls
+ls -alh
+cd /var/run/mysqld/
+ls
+vim /etc/my.cnf.d/mysql-server.cnf 
