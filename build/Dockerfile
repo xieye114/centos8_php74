@@ -53,7 +53,8 @@ RUN ln -fs /usr/share/zoneinfo/${TZ} /etc/localtime \
 	&& dnf install -y  langpacks-zh_CN \
 	&& sed -i 's/en_US/zh_CN/g' /etc/locale.conf \
     && dnf install -y @mysql \
-    && sed -i 's/\/var\/lib\/mysql\/mysql.sock/\/var\/run\/mysqld\/mysql.sock/g' /etc/my.cnf.d/mysql-server.cnf \
+    && sed -i 's/\/var\/lib\/mysql\/mysql.sock/\/tmp\/mysql.sock/g' /etc/my.cnf.d/mysql-server.cnf \
+    && sed -i 's/[client]/[client]\\n\/socket=\/tmp\/mysql.sock/g' /etc/my.cnf.d/client.cnf \
     && systemctl enable mysqld
 
 	
