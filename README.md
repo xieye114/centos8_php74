@@ -24,6 +24,8 @@ cd centos8\build
 build
 
 启动容器前需修改 up.bat，只需改这一次 
+一样就不用改
+必须 window 的换行符结尾，不能 linux 换行符，因为这是bat文件。
 set mypath=d:/temp/centos8_php74
 set path2=d:\temp\centos8_php74
 改成
@@ -31,6 +33,7 @@ set mypath=d:/centos8
 set path2=d:\centos8
 
 启动容器，右下角docker会不停弹窗，让你确认，点击是，共享。
+如 up 失败，就先执行 down，再 up
 up
 ~~~
 
@@ -59,17 +62,22 @@ composer create-project --prefer-dist laravel/laravel blog "8.*"
 如不想使用了，进入build目录，执行down 命令。
 每次关电脑前最好关闭容器。
 
-## mysql 的数据存放
-其中mysql的数据都保存在windows上，就算容器关闭，下次再打开，数据依然保留。
-
-## nginx 的配置修改。
-修改 nginx_config 里的配置文件后，只需进入容器，systemctl restart nginx ，即可生效。
-
-## 共享目录
+## 文件共享设置
 其实可以事先在docker Desktop里设置共享目录，只需设置 d:\centos8 即可，不设置也没关系，弹窗同意也行。
 
+## 常用目录
+
+~~~
+build 是日常维护目录，进入此目录可以执行常用命令。
+code 代码目录，可以在主机使用各种IDE编写代码，在容器内 执行composer，执行php脚本
+composer 这是容器的composer下载的库缓存，不管它就行，
+mysql_data 其中mysql的数据都保存在windows上，就算容器关闭，下次再打开，数据依然保留
+nginx_config 修改里面的配置文件后，只需进入容器，systemctl restart nginx ，即可生效。
+php_config 暂未用
+root_config  主要两个文件，一个是命令历史，自动的，一个是进入容器自动执行的脚本。
+~~~
+
 ## 常用命令
-build是日常维护目录，进入此目录可以执行以下命令。
 
 ~~~
 build 构建镜像
