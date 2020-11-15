@@ -1,7 +1,8 @@
 rem centos 8
 
-set mypath=d:/temp/centos8_php74
-set path2=d:\temp\centos8_php74
+set mypath=d:/centos8
+
+set path2=d:\centos8
 
 if exist %path2%\mysql_data (
   rem cancel

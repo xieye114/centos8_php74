@@ -82,3 +82,5 @@ composer create-project --prefer-dist laravel/laravel blog "8.*"
 cd ..
 cd /code
 composer create-project --prefer-dist laravel/laravel blog "8.*"
+cd /code
+composer create-project --prefer-dist laravel/laravel blog "8.*"
