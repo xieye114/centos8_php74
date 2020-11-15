@@ -55,7 +55,18 @@ composer create-project --prefer-dist laravel/laravel blog "8.*"
 ## nginx 的配置修改。
 修改 nginx_config 里的配置文件后，只需进入容器，systemctl restart nginx ，即可生效。
 
+## 日常使用
+关机前最好进入build目录，执行down命令关闭容器。
+build是日常维护目录，进入此目录可以执行以下命令。
 
+~~~
+build 构建镜像
+remove 删除镜像
+up 启动容器（会自动创建）
+down 关闭容器
+exec 进入容器
+按住CTRL+d 可以退出容器。
+~~~
 
 
 
