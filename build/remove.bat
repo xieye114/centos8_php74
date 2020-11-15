@@ -1,4 +1,4 @@
-rem kill centos8
+rem remove centos8
 
 docker rmi centos:8y
 

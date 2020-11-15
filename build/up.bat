@@ -1,4 +1,4 @@
-rem centos 8
+rem start centos 8
 
 set mypath=d:/centos8
 

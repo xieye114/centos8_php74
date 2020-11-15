@@ -45,7 +45,7 @@ module_hotfixes=true \n'\
 	&& sed -i 's/user\ =\ apache/user\ =\ nginx/g' /etc/opt/remi/php74/php-fpm.d/www.conf \  
     && sed -i 's/group\ =\ apache/group\ =\ nginx/g' /etc/opt/remi/php74/php-fpm.d/www.conf  \
 	&& sed -i 's/listen\ =\ \/var\/opt\/remi\/php74\/run\/php-fpm\/www.sock/listen=9000/g' /etc/opt/remi/php74/php-fpm.d/www.conf \
-    && dnf install -y  wget vim redis zip unzip p7zip rsync crontabs supervisor net-tools python3	\
+    && dnf install -y  git wget vim redis zip unzip p7zip rsync crontabs supervisor net-tools python3	\
 	&& systemctl enable redis
 
 RUN ln -fs /usr/share/zoneinfo/${TZ} /etc/localtime \
