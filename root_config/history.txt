@@ -80,3 +80,5 @@ vim /etc/my.cnf.d/mysql-server.cnf
 cd /code
 composer create-project --prefer-dist laravel/laravel blog "8.*"
 cd ..
+cd /code
+composer create-project --prefer-dist laravel/laravel blog "8.*"
