@@ -1,10 +1,10 @@
-:: centos 8 容器启动文件，需自行修改下面的mypath
+rem centos 8
 
 set mypath=d:/temp/centos8_php74
-set path2=d:\yyy\centos8_php74
+set path2=d:\temp\centos8_php74
 
 if exist %path2%\mysql_data (
-  rem cancel。。
+  rem cancel
 )else (
   md %path2%\mysql_data
 )
